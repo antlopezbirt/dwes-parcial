@@ -1,17 +1,17 @@
 [
     {
-        "id": 1, 
+        "id": 1,
         "nombre": "Termostato Hall",
         "temperatura_actual": 19,
-        "temperatura_objetivo": 20,
-        "modo": "calor"
+        "temperatura_objetivo": 19,
+        "modo": "ventilar"
     },
     {
         "id": 2,
         "nombre": "Termostato I+D",
         "temperatura_actual": 19,
         "temperatura_objetivo": 18,
-        "modo": "frio"
+        "modo": "ventilar"
     },
     {
         "id": 3,
