@@ -1,0 +1,70 @@
+{
+	"info": {
+		"_postman_id": "71225525-07c2-49da-ac99-c811c29ab64a",
+		"name": "Dwes-parcial",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "39905534"
+	},
+	"item": [
+		{
+			"name": "update",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": 3,\r\n    \"temperatura_objetivo\": 19\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost/api-examen/api/public/updatetemperatura",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"api-examen",
+						"api",
+						"public",
+						"updatetemperatura"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "404 not found",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": 3,\r\n    \"temperatura_objetivo\": 19\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost/api-examen/api/public/error",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"api-examen",
+						"api",
+						"public",
+						"error"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

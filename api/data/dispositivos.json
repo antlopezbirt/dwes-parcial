@@ -10,15 +10,15 @@
         "id": 2,
         "nombre": "Termostato I+D",
         "temperatura_actual": 19,
-        "temperatura_objetivo": 18,
-        "modo": "ventilar"
+        "temperatura_objetivo": 22,
+        "modo": "calor"
     },
     {
         "id": 3,
         "nombre": "Termostato Cafeteria",
         "temperatura_actual": 18,
-        "temperatura_objetivo": 18,
-        "modo": "ventilar"
+        "temperatura_objetivo": 19,
+        "modo": "calor"
     },
     {
         "id": 4,
