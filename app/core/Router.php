@@ -6,7 +6,8 @@ class Router {
 
     public function __construct() {
         $this->routes = [
-            '/' => 'TermostatoController@index'
+            '/' => 'TermostatoController@index',
+            '/updatetemperatura' => 'TermostatoController@update'
         ];
     }
 
@@ -55,7 +56,7 @@ class Router {
                 list($controller, $method) = explode('@', $params);
     
                 // TODO: Ruta completa al archivo del controlador
-                $controllerFile = __DIR__ . 'tu directorio' . $controller . '.php';
+                $controllerFile = __DIR__ . '/../controllers/' . $controller . '.php';
     
                 // Verificar si el archivo del controlador existe
                 if (file_exists($controllerFile)) {
@@ -80,13 +81,21 @@ class Router {
                         return;
                     }
                 }
+
+                $this->sendNotFound();
+                return;
                 
             }
         }
+
+        $this->sendNotFound();
     }
     
 
     private function sendNotFound() {
+        header("HTTP/1.0 404 Not Found");
+        http_response_code(404);
+        echo "404 Not Found";
         return null;
     }
 }
