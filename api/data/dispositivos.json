@@ -17,7 +17,7 @@
         "id": 3,
         "nombre": "Termostato Cafeteria",
         "temperatura_actual": 18,
-        "temperatura_objetivo": 19,
+        "temperatura_objetivo": 20,
         "modo": "calor"
     },
     {
